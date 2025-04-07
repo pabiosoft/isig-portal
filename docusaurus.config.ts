@@ -10,15 +10,25 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://isig-guinee.com', // (même si pas encore en ligne)
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // url: 'https://isig-guinee.com', // (même si pas encore en ligne)
+  // // Set the /<baseUrl>/ pathname under which your site is served
+  // // For GitHub pages deployment, it is often '/<projectName>/'
+  // baseUrl: '/',
+  url: 'https://pabiosoft.github.io',
+  baseUrl: '/isig-portal/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Pabiosoft', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'isig-portal', // Usually your repo name.
+  deploymentBranch: 'gh-pages',      // branche où sera généré le site
+  trailingSlash: false,
+// If you deploy your site to a GitHub Pages site, you may want to set
+// trailingSlash: true, to remove trailing slashes from your routes.
+// Default is false, which means you may see trailing slashes in your URL.
+// For more details, see: https://docusaurus.io/docs/deployment#github-pages
+// If you deploy your site to a GitHub Pages site, you may want to set
+
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
