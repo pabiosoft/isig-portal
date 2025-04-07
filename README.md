@@ -1,40 +1,63 @@
-# Website
-ISIG template
+# ISIG Portal
 
-### Installation
+Bienvenue sur le site officiel de l'**Institut Supérieur International de Guinée (ISIG)**.
 
-```
-$ yarn
-```
+Ce projet a été conçu avec ❤️ pour offrir une expérience moderne et professionnelle aux étudiants, enseignants et visiteurs.
 
-### Local Development
+---
 
-```
-$ yarn start
-```
+## 🚀 Déploiement en production
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+✅ Ton site est officiellement en ligne ici :  
+➡️ [https://Pabiosoft.github.io/isig-portal/](https://Pabiosoft.github.io/isig-portal/)
 
-### Build
+Le site est déployé automatiquement sur **GitHub Pages** via la branche `gh-pages`.
 
-```
-$ yarn build
-```
+---
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 🛠️ Technologies utilisées
+- [TypeScript](https://www.typescriptlang.org/) (dans la configuration)
+- [CSS personnalisé](./src/css/custom.css)
+- Déploiement avec `npm run deploy`
 
-### Deployment
+---
 
-Using SSH:
+## 📂 Structure du projet
 
-```
-$ USE_SSH=true yarn deploy
-```
+- `/docs/` : Documentation officielle (règlement intérieur, admission, guide étudiant, événements...)
+- `/src/pages/` : Pages principales personnalisées (Accueil, À propos, Formations, Anciens élèves, Admission)
+- `/i18n/` : Dossier pour les traductions (multi-langues Français 🇫🇷 / Anglais 🇬🇧)
+- `/static/` : Images et ressources statiques (bannières, logo, etc.)
+- `/docusaurus.config.ts` : Fichier de configuration principale du projet.
 
-Not using SSH:
+---
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## 📜 Commandes utiles
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+| Commande           | Action                                       |
+| ------------------ | ------------------------------------------- |
+| `npm start`        | Démarre le site en mode développement local |
+| `npm run build`    | Génère une version de production du site    |
+| `npm run deploy`   | Déploie le site sur GitHub Pages            |
+
+---
+
+## 🌍 À propos du projet
+
+Ce site a été imaginé pour donner une image **internationale**, **innovante** et **responsable** de l'Institut ISIG.  
+Il combine **design premium** 🎨 et **performances modernes** 🚀.
+
+---
+
+## ✨ Crédits
+
+Made in 🇬🇳 **Guinée** avec ❤️ par [Pabiosoft](https://pabiosoft.com/).
+
+---
+
+> Ce projet continue d’évoluer et pourra accueillir prochainement :  
+> - Des actualités dynamiques  
+> - Un espace étudiant  
+> - Un espace enseignant  
+> - Et bien plus encore...
+

@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import '../css/homepage.css'; // Assurez-vous que le CSS est mis à jour
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           <h2>Nos Valeurs</h2>
           <div className="values-cards">
           <div className="values-card values-card-logo-only">
-            <img src="/logo/logo.png" alt="Logo ISIG" className="values-logo" />
+            <img src={useBaseUrl('/logo/logo.png')} alt="Logo ISIG" className="values-logo" />
           </div>
             <div className="values-card">
               <span className="icon">🏆</span>
@@ -51,19 +52,19 @@ export default function Home() {
             Tout ce que vous devez savoir pour démarrer votre parcours à l’ISIG.
           </p>
           <div className="official-info-cards">
-            <Link to="/docs/reglement-interieur" className="official-info-card">
+            <Link to="/docs/tutorial-basics/regelement-interieur" className="official-info-card">
               <span className="icon">📜</span> Règlement Intérieur
               <p>Toutes les règles et attentes à l’ISIG.</p>
             </Link>
-            <Link to="/docs/admission" className="official-info-card">
+            <Link to="/docs/tutorial-basics/admission" className="official-info-card">
               <span className="icon">🎓</span> Conditions d’Admission
               <p>Comment rejoindre notre institution.</p>
             </Link>
-            <Link to="/docs/guide-etudiant" className="official-info-card">
+            <Link to="/docs/tutorial-basics/guide-etudiant" className="official-info-card">
               <span className="icon">📚</span> Guide Étudiant
               <p>Votre manuel pour la vie étudiante.</p>
             </Link>
-            <Link to="/docs/evenements" className="official-info-card">
+            <Link to="/docs/tutorial-basics/evenements" className="official-info-card">
               <span className="icon">🎉</span> Événements
               <p>Les moments forts de l’année.</p>
             </Link>
@@ -142,19 +143,19 @@ export default function Home() {
           <p>Des parcours inspirants à travers le monde.</p>
           <div className="alumni-container">
             <div className="alumni-card">
-              <img src="/img/aissatou.jpg" alt="Aissatou Diallo" className="alumni-image" />
+              <img src={useBaseUrl('/img/abdoul.jpg')} alt="Aissatou Diallo" className="alumni-image" />
               <h3>Abdoul Traoré</h3>
               <p>Data Scientist - Ministère de l’Économie Numérique 🇬🇳</p>
               <small>"L’ISIG m’a donné les clés pour exceller."</small>
             </div>
             <div className="alumni-card">
-              <img src="/img/mamadou.jpg" alt="Mamadou Bah" className="alumni-image" />
+              <img src={useBaseUrl('/img/mamadou.jpg')} alt="Mamadou Bah" className="alumni-image" />
               <h3>Mamadou Bah</h3>
               <p>Administrateur Civil - Ministère de l’Administration 🇬🇳</p>
               <small>"Une formation qui ouvre des portes."</small>
             </div>
             <div className="alumni-card">
-              <img src="/img/camara.jpg" alt="Fatoumata Camara" className="alumni-image" />
+              <img src={useBaseUrl('/img/camara.jpg')} alt="Fatoumata Camara" className="alumni-image" />
               <h3>Francis Camara</h3>
               <p>Marketing Digital - Capgemini 🇫🇷</p>
               <small>"L’ISIG m’a propulsée à l’international."</small>
@@ -167,7 +168,7 @@ export default function Home() {
         <section className="director-section fade-in">
           <h2>Mot du Directeur</h2>
           <div className="director-container">
-            <img src="/img/directeur.png" alt="Dr. Mohamed Diallo" className="director-image" />
+            <img src={useBaseUrl('/img/directeur.png')} alt="Dr. Mohamed Diallo" className="director-image" />
             <div className="director-text">
               <p>
                 "Chers futurs leaders, à l’ISIG, nous croyons en votre potentiel pour changer le monde. Notre mission est de vous fournir les outils, les connaissances et l’inspiration nécessaires pour réaliser vos rêves. Ensemble, construisons un avenir meilleur."
