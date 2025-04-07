@@ -1,0 +1,35 @@
+/* ABOUT PAGE */
+.about-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .about-main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .about-main p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Ajout animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
