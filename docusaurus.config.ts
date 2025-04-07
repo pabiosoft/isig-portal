@@ -145,7 +145,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Institut Supérieur International de Guinée · Tous droits réservés. Made in Made in Guinée&nbsp;🇬🇳 par <a class="footer-link" href="https://pabiosoft.com/#/contact" target="_blank" rel="noopener noreferrer">Pabiosoft</a>.`,
+      copyright: `© ${new Date().getFullYear()} Institut Supérieur International de Guinée · Tous droits réservés. Made in Guinée&nbsp;🇬🇳 par <a class="footer-link" href="https://pabiosoft.com/#/contact" target="_blank" rel="noopener noreferrer">Pabiosoft</a>.`,
     },
     
     prism: {
