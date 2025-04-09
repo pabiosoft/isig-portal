@@ -1,0 +1,1 @@
+(self.webpackChunkecole=self.webpackChunkecole||[]).push([[5741],{5741:()=>{}}]);

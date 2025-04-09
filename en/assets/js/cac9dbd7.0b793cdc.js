@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecole=self.webpackChunkecole||[]).push([[3458],{9455:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/isig-portal/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
