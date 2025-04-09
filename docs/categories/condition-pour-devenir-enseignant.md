@@ -1,4 +1,7 @@
 ---
+id: condition-pour-devenir-enseignant
+title: Devenir Enseignant
+description: Les conditions pour intégrer l'équipe enseignante de l'ISIG.
 sidebar_position: 2
 ---
 

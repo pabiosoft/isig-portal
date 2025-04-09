@@ -1,4 +1,7 @@
 ---
+id: vision
+title: Vision
+description: Notre vision pour l'avenir de l'enseignement supérieur en Guinée.
 sidebar_position: 5
 ---
 # Vision et Mission

@@ -1,8 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
-import '../css/admission.css'; // 👈 Ton CSS
+import '../css/admission.css'; // Ton CSS personnalisé
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function Admission() {
+  const { i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
+
+  const translations = {
+    fr: {
+      title: "Admission",
+      description: "Déposez votre candidature à l'ISIG",
+      heading: "Déposez votre candidature",
+      intro: "Merci de l'intérêt que vous portez à l'ISIG. Remplissez ce formulaire pour entamer votre admission.",
+      namePlaceholder: "Nom complet",
+      emailPlaceholder: "Adresse email",
+      phonePlaceholder: "Numéro de téléphone",
+      programPlaceholder: "Choisir un programme",
+      programs: [
+        "Licence Informatique",
+        "Licence Administration des Affaires",
+        "Master Intelligence Artificielle"
+      ],
+      motivationPlaceholder: "Votre lettre de motivation",
+      captchaQuestion: "Pour confirmer que vous êtes humain : Combien font",
+      captchaPlaceholder: "Votre réponse",
+      captchaError: "Réponse incorrecte. Veuillez réessayer.",
+      submitButton: "Envoyer ma candidature",
+    },
+    en: {
+      title: "Admission",
+      description: "Submit your application to ISIG",
+      heading: "Submit Your Application",
+      intro: "Thank you for your interest in ISIG. Please fill out this form to begin your admission process.",
+      namePlaceholder: "Full Name",
+      emailPlaceholder: "Email Address",
+      phonePlaceholder: "Phone Number",
+      programPlaceholder: "Choose a program",
+      programs: [
+        "Bachelor in Computer Science",
+        "Bachelor in Business Administration",
+        "Master in Artificial Intelligence"
+      ],
+      motivationPlaceholder: "Your motivation letter",
+      captchaQuestion: "To confirm you're human: What is",
+      captchaPlaceholder: "Your answer",
+      captchaError: "Incorrect answer. Please try again.",
+      submitButton: "Submit my application",
+    }
+  };
+
+  const t = translations[locale] || translations.fr; // fallback français
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,7 +91,7 @@ export default function Admission() {
 
     if (parseInt(captchaValue.trim(), 10) !== number1 + number2) {
       setCaptchaValid(false);
-      setErrorMessage('Réponse incorrecte. Veuillez réessayer.');
+      setErrorMessage(t.captchaError);
       setCaptchaValue('');
       generateCaptcha(); // Nouvelle question
       return;
@@ -51,7 +100,6 @@ export default function Admission() {
     setCaptchaValid(true);
     setErrorMessage('');
 
-    // Construction du mailto:
     const subject = encodeURIComponent('Candidature ISIG');
     const body = encodeURIComponent(
       `Nom : ${formData.name}\n` +
@@ -63,20 +111,20 @@ export default function Admission() {
 
     const mailtoLink = `mailto:contact@monimba.com?subject=${subject}&body=${body}`;
 
-    window.location.href = mailtoLink; // Ouvre l'email automatiquement
+    window.location.href = mailtoLink;
   }
 
   return (
-    <Layout title="Admission" description="Déposez votre candidature à l'ISIG">
+    <Layout title={t.title} description={t.description}>
       <main className="admission-main">
-        <h1>Déposez votre candidature</h1>
-        <p>Merci de l'intérêt que vous portez à l'ISIG. Remplissez ce formulaire pour entamer votre admission.</p>
+        <h1>{t.heading}</h1>
+        <p>{t.intro}</p>
 
         <form className="admission-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
-            placeholder="Nom complet"
+            placeholder={t.namePlaceholder}
             value={formData.name}
             onChange={handleInputChange}
             required
@@ -84,7 +132,7 @@ export default function Admission() {
           <input
             type="email"
             name="email"
-            placeholder="Adresse email"
+            placeholder={t.emailPlaceholder}
             value={formData.email}
             onChange={handleInputChange}
             required
@@ -92,7 +140,7 @@ export default function Admission() {
           <input
             type="tel"
             name="phone"
-            placeholder="Numéro de téléphone"
+            placeholder={t.phonePlaceholder}
             value={formData.phone}
             onChange={handleInputChange}
             required
@@ -103,33 +151,34 @@ export default function Admission() {
             onChange={handleInputChange}
             required
           >
-            <option value="">Choisir un programme</option>
-            <option value="Licence Informatique">Licence Informatique</option>
-            <option value="Licence Administration des Affaires">Licence Administration des Affaires</option>
-            <option value="Master Intelligence Artificielle">Master Intelligence Artificielle</option>
+            <option value="">{t.programPlaceholder}</option>
+            {t.programs.map((program, index) => (
+              <option key={index} value={program}>
+                {program}
+              </option>
+            ))}
           </select>
           <textarea
             name="motivation"
             rows={5}
-            placeholder="Votre lettre de motivation"
+            placeholder={t.motivationPlaceholder}
             value={formData.motivation}
             onChange={handleInputChange}
             required
           ></textarea>
 
-          {/* Mini CAPTCHA */}
+          {/* CAPTCHA */}
           <div style={{ marginTop: '2rem', textAlign: 'left' }}>
             <label style={{ fontWeight: 'bold', marginBottom: '0.5rem', display: 'block' }}>
-              Pour confirmer que vous êtes humain : Combien font {number1} + {number2} ?
+              {t.captchaQuestion} {number1} + {number2} ?
             </label>
             <input
               type="text"
               value={captchaValue}
               onChange={handleCaptchaInput}
-              placeholder="Votre réponse"
+              placeholder={t.captchaPlaceholder}
               required
             />
-            {/* Message d'erreur sous le champ */}
             {errorMessage && (
               <div style={{ color: 'red', marginTop: '0.5rem', fontSize: '0.95rem' }}>
                 {errorMessage}
@@ -138,7 +187,7 @@ export default function Admission() {
           </div>
 
           <button type="submit" style={{ marginTop: '2rem' }}>
-            Envoyer ma candidature
+            {t.submitButton}
           </button>
         </form>
       </main>

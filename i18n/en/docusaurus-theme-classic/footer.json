@@ -1,0 +1,58 @@
+{
+  "link.title.Institut": {
+    "message": "Institute",
+    "description": "The title of the footer links column with title=Institut in the footer"
+  },
+  "link.title.Formations": {
+    "message": "Programs",
+    "description": "The title of the footer links column with title=Formations in the footer"
+  },
+  "link.title.Vie du Campus": {
+    "message": "Campus Life",
+    "description": "The title of the footer links column with title=Vie du Campus in the footer"
+  },
+  "link.title.Réseaux Sociaux": {
+    "message": "Social Networks",
+    "description": "The title of the footer links column with title=Réseaux Sociaux in the footer"
+  },
+  "link.item.label.À propos": {
+    "message": "About",
+    "description": "The label of footer link with label=À propos linking to /about"
+  },
+  "link.item.label.Informations Officielles": {
+    "message": "Official Information",
+    "description": "The label of footer link with label=Informations Officielles linking to /docs/intro"
+  },
+  "link.item.label.Admissions": {
+    "message": "Admissions",
+    "description": "The label of footer link with label=Admissions linking to /admission"
+  },
+  "link.item.label.Licences": {
+    "message": "Bachelor's Degrees",
+    "description": "The label of footer link with label=Licences linking to /formations"
+  },
+  "link.item.label.Masters": {
+    "message": "Master's Degrees",
+    "description": "The label of footer link with label=Masters linking to /formations"
+  },
+  "link.item.label.Actualités": {
+    "message": "News",
+    "description": "The label of footer link with label=Actualités linking to /docs/intro"
+  },
+  "link.item.label.Événements": {
+    "message": "Events",
+    "description": "The label of footer link with label=Événements linking to /docs/categories/evenements"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com"
+  },
+  "copyright": {
+    "message": "© 2025 International Higher Institute of Guinea · All rights reserved. Made in Guinea&nbsp;🇬🇳 by <a class=\"footer-link\" href=\"https://pabiosoft.com/#/contact\" target=\"_blank\" rel=\"noopener noreferrer\">Pabiosoft</a>.",
+    "description": "The footer copyright"
+  }
+}

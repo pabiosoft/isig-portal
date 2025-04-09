@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Vie du Campus": {
+    "message": "Vie du Campus",
+    "description": "The label for category Vie du Campus in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Vie du Campus.link.generated-index.title": {
+    "message": "Vie du Campus",
+    "description": "The generated-index page title for category Vie du Campus in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Vie du Campus.link.generated-index.description": {
+    "message": "Explorez la vie étudiante, les actualités, les événements et la culture à l'ISIG.",
+    "description": "The generated-index page description for category Vie du Campus in sidebar tutorialSidebar"
+  }
+}

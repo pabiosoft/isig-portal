@@ -1,4 +1,7 @@
 ---
+id: admission
+title: Admission
+description: Découvrez les conditions d'admission à l'ISIG
 sidebar_position: 3
 ---
 # Conditions d'Admission

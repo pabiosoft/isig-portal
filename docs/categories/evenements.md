@@ -1,4 +1,5 @@
 ---
+id: evenements
 sidebar_position: 6
 title: Événements
 description: Découvrez les événements marquants de l'ISIG

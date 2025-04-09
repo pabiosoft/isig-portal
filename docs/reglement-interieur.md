@@ -1,4 +1,11 @@
-# Règlement Intérieur
+---
+id: reglement-interieur
+title: Règlement Intérieur
+description: Les règles officielles de conduite au sein de l'Institut.
+sidebar_position: 1
+---
+
+ # Règlement Intérieur
 
 Bienvenue à l'ISIG. Le respect du règlement intérieur est obligatoire pour tous les étudiants et membres du personnel.
 

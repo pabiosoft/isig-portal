@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "ISIG",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ISIG Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Accueil": {
+    "message": "Home",
+    "description": "Navbar item with label Accueil"
+  },
+  "item.label.Informations Officielles": {
+    "message": "Official Information",
+    "description": "Navbar item with label Informations Officielles"
+  },
+  "item.label.À propos": {
+    "message": "About",
+    "description": "Navbar item with label À propos"
+  },
+  "item.label.Formations": {
+    "message": "Programs",
+    "description": "Navbar item with label Formations"
+  },
+  "item.label.Anciens élèves": {
+    "message": "Alumni",
+    "description": "Navbar item with label Anciens élèves"
+  },
+  "item.label.Admission": {
+    "message": "Admission",
+    "description": "Navbar item with label Admission"
+  }
+}

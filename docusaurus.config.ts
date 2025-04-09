@@ -38,8 +38,20 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr'],
+    locales: ['fr', 'en'],
+
+    localeConfigs: {
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+    },
   },
+  
   presets: [
     [
       'classic',
@@ -89,7 +101,7 @@ const config: Config = {
     navbar: {
       title: 'ISIG',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'ISIG LOGO',
         src: 'logo/logo.png',
       },
       items: [
@@ -105,10 +117,10 @@ const config: Config = {
         { to: '/formations', label: 'Formations', position: 'left' },
         { to: '/anciens', label: 'Anciens élèves', position: 'left' },
         { to: '/admission', label: 'Admission', position: 'left' },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },        
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },        
       ],
       
     },
@@ -134,7 +146,7 @@ const config: Config = {
           title: 'Vie du Campus',
           items: [
             { label: 'Actualités', to: '/docs/intro' },
-            { label: 'Événements', to: '/docs/tutorial-basics/evenements' },
+            { label: 'Événements', to: '/docs/categories/evenements' },
           ],
         },
         {

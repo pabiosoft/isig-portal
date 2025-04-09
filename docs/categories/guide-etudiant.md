@@ -1,4 +1,7 @@
 ---
+id: guide-etudiant
+title: Guide de l'Étudiant
+description: Tout ce que vous devez savoir pour réussir votre parcours à l'ISIG.
 sidebar_position: 6
 ---
 # Guide Étudiant

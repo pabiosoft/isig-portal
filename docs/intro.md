@@ -1,5 +1,9 @@
 ---
+id: intro
+title: Bienvenue à l'ISIG
+description: Introduction à l'Institut Supérieur International de Guinée.
 sidebar_position: 1
+slug: /intro
 ---
 
 # Actualités de l'ISIG
